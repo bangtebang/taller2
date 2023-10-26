@@ -39,9 +39,9 @@ public class DBGenerator {
 
     private static void crearTablaSelecion(DSLContext create){
         create.createTableIfNotExists("Seleccion").column("nombre_pais",VARCHAR(100))
-                .column("id",VARCHAR(50))
                 .column("ranking",INTEGER)
                 .column("bandera",VARCHAR(100))
+                .column("id",VARCHAR(50))
                 .constraint(primaryKey("id")).execute();
     }
 
