@@ -36,4 +36,8 @@ public class Jugador {
 		this.posicion = posicion;
 		this.seleccion = seleccion;
 	}
+
+	public Seleccion getSeleccion() {
+		return this.seleccion;
+	}
 }
