@@ -55,7 +55,7 @@ public class JugadorDAO {
         }
         return jugadores;
     }
-    private static String[][] exportardatos(Result resultados){
+    static String[][] exportardatos(Result resultados){
         String[][] datosResultado=new String[resultados.size()][4];
         for(int registro = 0; registro < resultados.size(); registro ++){
             datosResultado[registro][0] = (String) resultados.getValue(registro,"nombre");

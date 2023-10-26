@@ -9,15 +9,16 @@ import org.jooq.impl.DSL;
 
 import java.util.List;
 
+import static model.data.dao.JugadorDAO.exportardatos;
 import static org.jooq.impl.DSL.name;
 import static org.jooq.impl.DSL.table;
 
 public class SeleccionDAO {
     public static void agregarSeleccion(DSLContext query, Seleccion seleccion){
         Table tablaCarrera= table(name("Seleccion"));
-        Field[] columnas = tablaCarrera.fields("nombre_seleccion","id","ranking","bandera");
+        Field[] columnas = tablaCarrera.fields("nombre_seleccion","ranking","bandera","id");
         query.insertInto(tablaCarrera, columnas[0], columnas[1],columnas[2],columnas[3])
-                .values(seleccion.getNombre(),seleccion.getId(),seleccion.getRanking(),seleccion.getBandera())
+                .values(seleccion.getNombre(),seleccion.getRanking(),seleccion.getBandera(),seleccion.getId())
                 .execute();
     }
     public static boolean validarExistenciaSelecciom(DSLContext query,String columnaTabla, Object dato){
@@ -53,4 +54,9 @@ public class SeleccionDAO {
         }
     }
 
+    public static String[][] obtenerSeleccion(DSLContext query, String id) {
+        Table tablaSeleccion= table(name("Seleccion"));
+        Result resultados = query.select().from(tablaSeleccion).where(DSL.field("id").eq(id)).fetch();
+        return exportardatos(resultados);
+    }
 }
