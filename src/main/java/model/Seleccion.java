@@ -1,6 +1,5 @@
 package model;
 
-import model.Jugador__;
 import model.Jugador;
 
 public class Seleccion {
@@ -8,7 +7,7 @@ public class Seleccion {
 	private int ranking;
 	private String bandera;
 	private String id;
-	private Jugador__ jugadores = new Jugador[0];
+	private Jugador[] jugadores = new Jugador[0];
 
 	public String getNombre() {
 		return this.nombre;
@@ -42,7 +41,10 @@ public class Seleccion {
 		this.id = id;
 	}
 
-	public Seleccion() {
-		throw new UnsupportedOperationException();
+	public Seleccion(String nombre, int ranking, String bandera, String id) {
+		this.nombre = nombre;
+		this.ranking = ranking;
+		this.bandera = bandera;
+		this.id = id;
 	}
-}
+	}

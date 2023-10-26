@@ -30,7 +30,10 @@ public class Jugador {
 		this.posicion = posicion;
 	}
 
-	public Jugador() {
-		throw new UnsupportedOperationException();
+	public Jugador(String nombre, int numero, String posicion, Seleccion seleccion) {
+		this.nombre = nombre;
+		this.numero = numero;
+		this.posicion = posicion;
+		this.seleccion = seleccion;
 	}
 }
