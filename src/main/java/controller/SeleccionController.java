@@ -26,7 +26,7 @@ public class SeleccionController {
 		return datosSeleccion;
 	}
 
-	public static boolean agregarJugador(String nombreJugador,String posicion, Seleccion seleccion, int numero) throws ClassNotFoundException {
+	public static boolean agregarJugador(String nombreJugador,int numero,String posicion, Seleccion seleccion) throws ClassNotFoundException {
 		DSLContext query = DBGenerator.conectarBD("Fifa");
 		if(!JugadorDAO.validarExistenciaJugador(query,"id",seleccion)){
 			Jugador jugador = new Jugador(nombreJugador,numero,posicion,seleccion);

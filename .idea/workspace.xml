@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44209e28-39cf-452b-abc6-ae741c1d56d0" name="Changes" comment="subo creacion de DAOS">
+    <list default="true" id="44209e28-39cf-452b-abc6-ae741c1d56d0" name="Changes" comment="subo controller">
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaAgregarJugadores.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaAgregarJugadores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SeleccionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SeleccionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/JugadorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/JugadorDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/data/dao/SeleccionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/data/dao/SeleccionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaAgregarSeleccion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaAgregarSeleccion.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaAgregarSeleccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaAgregarSeleccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaBuscarSeleccion.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaBuscarSeleccion.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaBuscarSeleccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaBuscarSeleccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaMenu.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/principal/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/principal/Launcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698324738397</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="subo controller">
+      <created>1698325416835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698325416835</updated>
+    </task>
+    <task id="LOCAL-00007" summary="subo controller">
+      <created>1698325456994</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698325456994</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -100,6 +121,7 @@
     <MESSAGE value="subo correccion y creacion de constructores" />
     <MESSAGE value="subo creacion y conexion con base de datos" />
     <MESSAGE value="subo creacion de DAOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo creacion de DAOS" />
+    <MESSAGE value="subo controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="subo controller" />
   </component>
 </project>
